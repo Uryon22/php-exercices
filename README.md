@@ -3,7 +3,7 @@
 Exercices 1, 2, 3
 ---
 
-Les fichiers des exercices 1, 2 et 3 sont à éxécuter directement par la commande php (exemple "php exercice1.php"), veuillez à décommenter les appels aux fonctions afin d'avoir un affichage visuel.
+Les fichiers des exercices 1, 2 et 3 sont à éxécuter directement par la commande php (exemple "php exercice1.php"), veuillez décommenter les appels aux fonctions afin d'avoir un affichage visuel.
 
 ---
 
