@@ -4,8 +4,6 @@ require("./exercice1.php");
 
 $entries = [8,44,61,50,6,20,100,67,150,80,4,0,55,9,37];
 
-$entries = [6,8,20,44,50,61,100,67,150,80,4,0,55,9,37];
-
 # 1. Proposer une méthode générale pour rechercher un élément dans un tableau
 function findInArray(int $element, array $array) {
     foreach($array as $key => $value) {
