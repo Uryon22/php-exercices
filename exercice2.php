@@ -5,7 +5,6 @@ require("./exercice1.php");
 $entries = [8,44,61,50,6,20,100,67,150,80,4,0,55,9,37];
 
 # 1. Proposer une méthode générale pour rechercher un élément dans un tableau
-# 2. Modifier votre code pour prendre en compte que les tableaux considérés sont ordonnés de manière croissante
 function findInArray(int $element, array $array) {
     foreach($array as $key => $value) {
         if ($element == $value) {
@@ -14,6 +13,18 @@ function findInArray(int $element, array $array) {
         }
     }
     echo "L'élément n'existe pas dans le tableau \n";
+}
+
+# 2. Modifier votre code pour prendre en compte que les tableaux considérés sont ordonnés de manière croissante
+function findInSortedArray(int $element, array $array) {
+    foreach($array as $key => $value) {
+        if ($element < $value) {
+            continue;
+        } elseif ($element == $value) {
+            echo "L'index de l'élément recherché est : " . $key . " et sa valeur est de : " . $value . "\n";
+            return;
+        }
+    }
 }
 
 # 3. Dans ce même cadre, implémenter une recherche dichotomique
@@ -81,8 +92,8 @@ function triParInsertion(array &$array) {
 ##
 
 ## 2
-//sort($entries);
-//findInArray(37, $entries);
+sort($entries);
+findInSortedArray(37, $entries);
 ##
 
 ## 3
